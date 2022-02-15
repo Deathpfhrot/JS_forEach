@@ -133,10 +133,17 @@ let checkNumber = [
     78
 ];
 
-let numbersDev = checkNumber.filter(zahl => zahl % 3 == 0)
-console.log(numbersDev);
+// let numbersDev = checkNumber.filter(zahl => zahl % 3 == 0)
+// console.log(numbersDev);
 
-numbersDev.forEach(addit => {
-    console.log(addit + 200);
+// numbersDev.forEach(addit => {
+//     console.log(addit + 200);
+// })
+
+checkNumber.forEach(zahl => {
+    if (zahl % 3 == 0){
+        console.log(zahl + 200);
+    } else{
+        console.log(zahl);
+    }
 })
-
